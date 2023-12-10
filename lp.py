@@ -34,7 +34,7 @@ def load(emb_file_path):
                 emb_dict[index] = np.array(emb.split()).astype(np.float32)
         
     return train_para, emb_dict  
-device = torch.device("cuda:1")
+device = torch.device("cuda:0")
 emb_file_path = './PubMed/emb.dat'
 train_para, emb_dict = load(emb_file_path)
 link_test_file = './PubMed/sample.dat'
