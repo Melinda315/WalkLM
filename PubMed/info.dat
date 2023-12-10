@@ -1,0 +1,43 @@
+node.dat
+
+TYPE	MEANING
+0		GENE
+1		DISEASE
+2		CHEMICAL
+3		SPECIES
+
+Attribute Dimension: 768
+
+-----------------------------------------------
+
+link.dat
+
+LINK	START	END	MEANING
+0		0		0	GENE-and-GENE
+1		0		1	GENE-causing-DISEASE
+2		1		1	DISEASE-and-DISEASE
+3		2		0	CHEMICAL-in-GENE
+4		2		1	CHEMICAL-in-DISEASE
+5		2		2	CHEMICAL-and-CHEMICAL
+6		2		3	CHEMICAL-in-SPECIES
+7		3		0	SPECIES-with-GENE
+8		3		1	SPECIES-with-DISEASE
+9		3		3	SPECIES-and-SPECIES
+
+Targeting: Link Type (1,1,2)
+
+-----------------------------------------------
+
+label.dat
+
+TYPE	CLASS	MEANING
+1		0		cardiovascular_disease
+1		1		glandular_disease
+1		2		nervous_disorder
+1		3		communicable_disease
+1		4		inflammatory_disease
+1		5		pycnosis
+1		6		skin_disease
+1		7		cancer
+
+Targeting: Label Type 1
